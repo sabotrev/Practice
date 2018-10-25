@@ -1,0 +1,38 @@
+<h1>Flatten Array</h1>
+<h3>Every way to flatten an array in JavaScript</h3>
+<h4>Two Dimensional Array: {{ twoDisplay }}</h4>
+
+<ul>
+  <li>Using 
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">concat</a> & 
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply">apply</a>
+  </li>
+  <code>var newArray = [].concat.apply([], twoDimArray)</code>
+
+  <li>Using 
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">reduce</a>
+  </li>
+  <code [innerHTML]="reduceFunction"></code>
+
+  <li>Looping</li>
+  <code [innerHTML]="loopingFunction"></code>
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+  <li>Using
+      <a target="_blank" href="  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread</a>
+      in ES6
+  </li>
+  <code>var newArray = [].concat(...twoDimArray)</code>
+</ul>
+
+<h4>Multiple Dimensional Array: {{ multiDisplay }}</h4>
+
+<ul>
+  <li>Using a stack</li>
+  <code [innerHTML]="stackFunction"></code>
+
+  <li>Recursive using
+      <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">reduce</a> &
+      <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat">concat</a>
+  </li>
+  <code [innerHTML]="recursiveFunction"></code>
+</ul>
