@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FlattenArrayComponent } from './flatten-array/flatten-array.component';
+import { SentenceReverseComponent } from './sentence-reverse/sentence-reverse.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FlattenArrayComponent
+    FlattenArrayComponent,
+    SentenceReverseComponent
   ],
   imports: [
     BrowserModule
